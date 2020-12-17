@@ -1,0 +1,22 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.false_to
+    - paragraphs.paragraphs_type.flowchart_task
+id: paragraph.flowchart_task.false_to
+field_name: false_to
+entity_type: paragraph
+bundle: flowchart_task
+label: 'False to'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

@@ -1,0 +1,4 @@
+services:
+  plugin.manager.flowchart_tasks:
+    class: Drupal\dyniva_flowchart\Plugin\FlowChartTasksPluginManager
+    arguments: ['@container.namespaces', '@cache.default', '@module_handler']

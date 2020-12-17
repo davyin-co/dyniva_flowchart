@@ -1,0 +1,24 @@
+<?php
+
+/**
+ * @file
+ * Provides Drupal hooks used in Maestro.
+ *
+ * An example on how to load and save a value in a template:
+ * $template = MaestroEngine::getTemplate($templateMachineName);
+ * $template->variables['initiator']['variable_value'] = 1;
+ * $template->save();
+ */
+
+/**
+ * Implements hook_theme().
+ */
+function dyniva_flowchart_theme($existing, $type, $theme, $path) {
+  return [
+    'template_task_legend' => [
+      'variables' => [
+        'var1' => 0,
+      ],
+    ],
+  ];
+}

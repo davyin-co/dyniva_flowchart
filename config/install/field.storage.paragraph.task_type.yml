@@ -1,0 +1,33 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - options
+    - paragraphs
+third_party_settings: {}
+id: paragraph.task_type
+field_name: task_type
+entity_type: paragraph
+type: list_string
+settings:
+  allowed_values:
+    -
+      value: start
+      label: Start
+    -
+      value: interaction
+      label: Interaction
+    -
+      value: if
+      label: If
+    -
+      value: end
+      label: End
+  allowed_values_function: ''
+module: options
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

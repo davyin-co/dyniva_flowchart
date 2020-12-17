@@ -1,0 +1,45 @@
+dyniva_flowchart.dyniva_flowchart_admin_settings:
+  path: '/admin/config/workflow/dyniva_flowchart'
+  defaults:
+    _form: '\Drupal\dyniva_flowchart\Form\MaestroTemplateBuilderSettingsForm'
+    _title: 'Maestro Template Editor Module Settings'
+  requirements:
+    _permission: 'administer site configuration'
+  options:
+    _admin_route: TRUE
+
+dyniva_flowchart:
+  path: '/manage/flowchart/{node}'
+  defaults:
+    _form: '\Drupal\dyniva_flowchart\Form\MaestroTemplateBuilderForm'
+  requirements:
+    _permission: administer maestro templates
+  options:
+    no_cache: TRUE
+
+dyniva_flowchart.add_new:
+  path: '/manage/flowchart/add_new/{node}'
+  defaults:
+    _form: '\Drupal\dyniva_flowchart\Form\MaestroTemplateBuilderAddNew'
+  requirements:
+    _permission: administer maestro templates
+  options:
+    no_cache: TRUE
+
+dyniva_flowchart.edit_task:
+  path: '/manage/flowchart/edit_task/{node}'
+  defaults:
+    _form: '\Drupal\dyniva_flowchart\Form\MaestroTemplateBuilderEditTask'
+  requirements:
+    _permission: administer maestro templates
+  options:
+    no_cache: TRUE
+
+dyniva_flowchart.canvas:
+  path: '/manage/flowchart/canvas/{node}'
+  defaults:
+    _form: '\Drupal\dyniva_flowchart\Form\MaestroTemplateBuilderCanvas'
+  requirements:
+    _permission: administer maestro templates
+  options:
+    no_cache: TRUE

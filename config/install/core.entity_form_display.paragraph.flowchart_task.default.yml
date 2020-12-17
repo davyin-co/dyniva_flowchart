@@ -1,0 +1,46 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flowchart_task.false_to
+    - field.field.paragraph.flowchart_task.left
+    - field.field.paragraph.flowchart_task.task_description
+    - field.field.paragraph.flowchart_task.task_name
+    - field.field.paragraph.flowchart_task.task_type
+    - field.field.paragraph.flowchart_task.to
+    - field.field.paragraph.flowchart_task.top
+    - paragraphs.paragraphs_type.flowchart_task
+id: paragraph.flowchart_task.default
+targetEntityType: paragraph
+bundle: flowchart_task
+mode: default
+content:
+  task_description:
+    weight: 2
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textarea
+    region: content
+  task_name:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  task_type:
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    type: options_select
+    region: content
+hidden:
+  created: true
+  false_to: true
+  left: true
+  status: true
+  to: true
+  top: true

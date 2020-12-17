@@ -1,0 +1,21 @@
+maestro_raphael:
+  version: 1.0
+  js:
+    /libraries/raphael/raphael.js: {}
+
+maestrojs:
+  version: 1.0
+  js:
+    js/template-display.js: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupalSettings
+    - core/jquery.once
+    - core/drupal.dialog.ajax
+    - dyniva_flowchart/maestro_raphael
+
+maestro_tasks_css:
+  css:
+    theme:
+      css/template.css: {}

@@ -1,0 +1,78 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.flowchart_task.false_to
+    - field.field.paragraph.flowchart_task.left
+    - field.field.paragraph.flowchart_task.task_description
+    - field.field.paragraph.flowchart_task.task_name
+    - field.field.paragraph.flowchart_task.task_type
+    - field.field.paragraph.flowchart_task.to
+    - field.field.paragraph.flowchart_task.top
+    - paragraphs.paragraphs_type.flowchart_task
+  module:
+    - options
+id: paragraph.flowchart_task.default
+targetEntityType: paragraph
+bundle: flowchart_task
+mode: default
+content:
+  false_to:
+    weight: 5
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  left:
+    weight: 2
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  task_description:
+    weight: 6
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: basic_string
+    region: content
+  task_name:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  task_type:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: list_default
+    region: content
+  to:
+    weight: 4
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  top:
+    weight: 3
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+hidden: {  }

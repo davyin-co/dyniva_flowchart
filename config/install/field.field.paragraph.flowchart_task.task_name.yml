@@ -1,0 +1,18 @@
+langcode: en
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.task_name
+    - paragraphs.paragraphs_type.flowchart_task
+id: paragraph.flowchart_task.task_name
+field_name: task_name
+entity_type: paragraph
+bundle: flowchart_task
+label: 'Task Name'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string
