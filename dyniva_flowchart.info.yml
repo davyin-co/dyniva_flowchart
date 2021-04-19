@@ -1,6 +1,6 @@
 name: Dyniva Flowchart
 description: Flow chart field with SVG builder.
-# core: 8.x
+# core_version_requirement: ^8.8 || ^9
 core_version_requirement: ^8 || ^9
 configure: dyniva_flowchart.dyniva_flowchart_admin_settings
 package: Field
